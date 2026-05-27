@@ -10,6 +10,14 @@ This repository contains the official PyTorch implementation of the paper **"SIM
 
 Recent EEG-to-image retrieval methods incorporate foveated or blurred visual priors but often assume a fixed, center-focused view, mismatching human attention that prioritizes semantically salient regions. We propose **SIMON**, a saliency-aware multi-view visual encoding framework for zero-shot EEG-to-image retrieval. SIMON estimates salient foreground structure, selects multiple fixation centers via saliency-weighted farthest point sampling, and generates foveated views that are encoded and aggregated into a robust semantic representation. We align these visual features with EEG embeddings in a shared hyperbolic space using a contrastive objective with geodesic interpolation.
 
+## 🧠 Framework Overview
+
+<p align="center">
+  <img src="assets/architecture.png" width="900">
+</p>
+
+Overview of the proposed SIMON framework. The high-level pipeline extracts saliency-aware multi-view object-centric visual representations, the low-level pipeline captures blurred visual structure, and the EEG pipeline aligns neural responses with visual embeddings through contrastive learning.
+
 ## 📚 Citation
 
 If you find this repository or our work useful, please consider citing our paper:
